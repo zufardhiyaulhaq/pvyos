@@ -1,7 +1,7 @@
+import pexpect
+from pexpect import pxssh
+
 class vyos():
-
-    type = "vyos-devices"
-
     def __init__(self,ipaddr,username,password):
         self.ipaddr=ipaddr
         self.username=username
@@ -30,5 +30,12 @@ class vyos():
         else:
             self.session = session
             return True
+
+    def ssh_connection(self):
+        connect = pxssh.pxssh(timeout=3)
+        session = connect.login(self.ipaddr,self.username,self.password,auto_prompt_reset=False)
+
+        self.session = connect
+        return True
 
         
