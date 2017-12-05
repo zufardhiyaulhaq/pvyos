@@ -21,7 +21,12 @@ class vyos():
             return False
 
         session.sendline(self.password)
+        result = session.expect(["$ ",pexpect.TIMEOUT])
 
+        if (result!=0):
+            return False
+        
+        session.sendline ("configure")
         result = session.expect(["$ ",pexpect.TIMEOUT])
 
         if (result!=0):
@@ -35,6 +40,7 @@ class vyos():
         connect = pxssh.pxssh(timeout=3)
         session = connect.login(self.ipaddr,self.username,self.password,auto_prompt_reset=False)
 
+        session.sendline ("configure")
         self.session = connect
         return True
 

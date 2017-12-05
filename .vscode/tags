@@ -4,19 +4,21 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-__init__	../pvyos/vyos.py	/^    def __init__(self,ipaddr,username,password):$/;"	kind:member	line:5
+__init__	../pvyos/router.py	/^    def __init__(self,ipaddr,username,password):$/;"	kind:member	line:5
 __init__.py	../pvyos/__init__.py	1;"	kind:file	line:1
-__init__.py	../pvyos/configuration/__init__.py	1;"	kind:file	line:1
-__init__.py	../pvyos/configuration/routing/__init__.py	1;"	kind:file	line:1
-__init__.py	../pvyos/configuration/services/__init__.py	1;"	kind:file	line:1
-__init__.py	../pvyos/configuration/system/__init__.py	1;"	kind:file	line:1
-connect	../pvyos/vyos.py	/^    def connect(self):$/;"	kind:member	line:10
-ospf.py	../pvyos/configuration/routing/ospf.py	1;"	kind:file	line:1
-rip.py	../pvyos/configuration/routing/rip.py	1;"	kind:file	line:1
-ripv2.py	../pvyos/configuration/routing/ripv2.py	1;"	kind:file	line:1
-ssh.py	../pvyos/configuration/services/ssh.py	1;"	kind:file	line:1
-telnet.py	../pvyos/configuration/services/telnet.py	1;"	kind:file	line:1
-type	../pvyos/vyos.py	/^    type="vyos-devices"$/;"	kind:variable	line:3
-username.py	../pvyos/configuration/system/username.py	1;"	kind:file	line:1
-vyos	../pvyos/vyos.py	/^class vyos():$/;"	kind:class	line:1
-vyos.py	../pvyos/vyos.py	1;"	kind:file	line:1
+__version__	../pvyos/__init__.py	/^__version__ = "0.0.1"$/;"	kind:variable	line:7
+interfaces.py	../pvyos/interfaces.py	1;"	kind:file	line:1
+ospf	../pvyos/routing.py	/^    def ospf(self):$/;"	kind:member	line:11
+rip	../pvyos/routing.py	/^    def rip(self):$/;"	kind:member	line:5
+ripv2	../pvyos/routing.py	/^    def ripv2(self):$/;"	kind:member	line:8
+router.py	../pvyos/router.py	1;"	kind:file	line:1
+routing	../pvyos/routing.py	/^class routing(router.vyos):$/;"	kind:class	line:3
+routing.py	../pvyos/routing.py	1;"	kind:file	line:1
+services	../pvyos/services.py	/^class services(router.vyos):$/;"	kind:class	line:3
+services.py	../pvyos/services.py	1;"	kind:file	line:1
+ssh	../pvyos/services.py	/^    def ssh(self):$/;"	kind:member	line:5
+ssh_connection	../pvyos/router.py	/^    def ssh_connection(self):$/;"	kind:member	line:34
+system.py	../pvyos/system.py	1;"	kind:file	line:1
+telnet	../pvyos/services.py	/^    def telnet(self):$/;"	kind:member	line:8
+telnet_connection	../pvyos/router.py	/^    def telnet_connection(self):$/;"	kind:member	line:10
+vyos	../pvyos/router.py	/^class vyos():$/;"	kind:class	line:4
