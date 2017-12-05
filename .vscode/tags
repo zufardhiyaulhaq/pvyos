@@ -4,4 +4,19 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+__init__	../pvyos/vyos.py	/^    def __init__(self,ipaddr,username,password):$/;"	kind:member	line:5
 __init__.py	../pvyos/__init__.py	1;"	kind:file	line:1
+__init__.py	../pvyos/configuration/__init__.py	1;"	kind:file	line:1
+__init__.py	../pvyos/configuration/routing/__init__.py	1;"	kind:file	line:1
+__init__.py	../pvyos/configuration/services/__init__.py	1;"	kind:file	line:1
+__init__.py	../pvyos/configuration/system/__init__.py	1;"	kind:file	line:1
+connect	../pvyos/vyos.py	/^    def connect(self):$/;"	kind:member	line:10
+ospf.py	../pvyos/configuration/routing/ospf.py	1;"	kind:file	line:1
+rip.py	../pvyos/configuration/routing/rip.py	1;"	kind:file	line:1
+ripv2.py	../pvyos/configuration/routing/ripv2.py	1;"	kind:file	line:1
+ssh.py	../pvyos/configuration/services/ssh.py	1;"	kind:file	line:1
+telnet.py	../pvyos/configuration/services/telnet.py	1;"	kind:file	line:1
+type	../pvyos/vyos.py	/^    type="vyos-devices"$/;"	kind:variable	line:3
+username.py	../pvyos/configuration/system/username.py	1;"	kind:file	line:1
+vyos	../pvyos/vyos.py	/^class vyos():$/;"	kind:class	line:1
+vyos.py	../pvyos/vyos.py	1;"	kind:file	line:1
