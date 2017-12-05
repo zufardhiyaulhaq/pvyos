@@ -1,6 +1,8 @@
-import router
+from .router import vyos
+import pexpect
+from pexpect import pxssh
 
-class services(router.vyos):
+class services(vyos):
 
     def __init__(self,ipaddr,username,password):
         super().__init__(ipaddr,username,password)
@@ -23,12 +25,12 @@ class services(router.vyos):
 
         session.sendline("set service telnet")
 
-    def dnsforwarder(self,ipdns):
+    def dnsforwarder(self,ipdns,interface):
        
         if (self.session == None):
             return False
         else:
             session = self.session
         
-        session.sendline("set service dns forwarding name-server %s"&(ipdns))
-
+        session.sendline("set service dns forwarding name-server %s"%(ipdns))
+        session.sendline("set service dns forwarding listen-on %s"%(interface))

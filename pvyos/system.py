@@ -1,6 +1,8 @@
-import router
+from .router import vyos
+import pexpect
+from pexpect import pxssh
 
-class system(router.vyos):
+class system(vyos):
 
     def __init__(self,ipaddr,username,password):
         super().__init__(ipaddr,username,password)
@@ -12,6 +14,6 @@ class system(router.vyos):
         else:
             session = self.session
 
-        sesion.sendline("set system login user %s full-name '%s'"&(username,fullname))
-        session.sendline("set system login user %s authentication plaintext-password %s"&(username,passwd))
-        session.sendline("set system login user %s level admin"&(username))
+        session.sendline("set system login user %s full-name '%s'"%(username,fullname))
+        session.sendline("set system login user %s authentication plaintext-password %s"%(username,passwd))
+        session.sendline("set system login user %s level admin"%(username))

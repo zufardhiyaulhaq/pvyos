@@ -49,4 +49,8 @@ class vyos():
         session = self.session
         session.sendline("commit")  
         session.sendline("commit")
+    
+    def closecon(self):
+        session = self.session
+        session.close()
         
