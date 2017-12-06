@@ -1,4 +1,4 @@
-[![PyPI](https://img.shields.io/badge/pypi-v0.0.1-blue.svg)](https://pypi.python.org/pypi/pvyos/0.0.1)
+[![PyPI](https://img.shields.io/badge/pypi-v0.1-blue.svg)](https://pypi.python.org/pypi/pvyos/0.1)
 
 # pvyos
 "Pvyos" is a combination of "python" and "vyos". Pvyos is a simple library build on pexpect to connect and configure Vyos OS.
@@ -13,6 +13,11 @@ pexpect >= 4.2.1+
 - System (User,Hostname)
 - Service (SSH,Telnet,DNS)
 - Interface (Ethernet, Loopback)
+
+# Instalation
+```
+pip3 install pvyos
+```
 
 # Example
 
