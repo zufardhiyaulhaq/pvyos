@@ -62,5 +62,39 @@ device.static("ipnetwork","netmask","nexthop","distance")
 * distance format   : 1-255
 
 ### RIP
+after establish a connection, use this following command to configure RIP.
+```
+device.rip("network/netmask")
+```
+* network netmask format : x.x.x.x/y
 
 ### OSPF
+
+## Interfaces
+The first thing you need to configure interfaces is declare a variable.
+
+```
+device = pvyos.routing("ipaddress","username","password")
+```
+
+after that, use telnet_connection() fungtion to connect to the device with telnet protocol.
+
+```
+device.telnet_connection()
+```
+### ethernet
+after establish a connection, use this following command to configure ethernet interfaces.
+```
+device.ethernet("ethernet name","ipaddress","description")
+```
+* ipaddress format  : x.x.x.x/y
+* ethernet name     : ethx
+* description       : string
+
+### loopback
+after establish a connection, use this following command to configure loopback interfaces.
+```
+device.loopback("loopback name","ipaddress")
+```
+* ipaddress format  : x.x.x.x/y
+* loopback name     : lox (see your device config)
