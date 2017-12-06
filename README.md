@@ -16,7 +16,7 @@ pexpect >= 4.2.1+
 
 # Instalation
 ```
-pip3 install pvyos
+python3 -m pip install pvyos
 ```
 
 # Example
