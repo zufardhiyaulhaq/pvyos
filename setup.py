@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 setup(
   name = 'pvyos',
   packages = ['pvyos'], 
@@ -7,7 +7,6 @@ setup(
   author = 'Zufar Dhiyaulhaq',
   author_email = 'zufar@ieee.org',
   url = 'https://github.com/zufardhiyaulhaq/pvyos',
-  download_url = 'https://github.com/peterldowns/mypackage/archive/0.1.tar.gz', # I'll explain this in a second
+  download_url = 'https://github.com/zufardhiyaulhaq/pvyos/archive/0.0.1.tar.gz',
   keywords = ['vyos', 'networking', 'automation'],
-  classifiers = [],
 )
