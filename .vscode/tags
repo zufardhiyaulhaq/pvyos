@@ -16,7 +16,7 @@ closecon	../pvyos/router.py	/^    def closecon(self):$/;"	kind:member	line:53
 commit	../pvyos/router.py	/^    def commit(self):$/;"	kind:member	line:48
 description	../setup.py	/^  description = ' Pvyos is a simple library build on pexpect to connect and configure Vyos OS.',$/;"	kind:variable	line:6
 dnsforwarder	../pvyos/services.py	/^    def dnsforwarder(self,ipdns,interface):$/;"	kind:member	line:28
-download_url	../setup.py	/^  download_url = 'https:\/\/github.com\/zufardhiyaulhaq\/pvyos\/archive\/0.0.1.tar.gz',$/;"	kind:variable	line:10
+download_url	../setup.py	/^  download_url = 'https:\/\/github.com\/zufardhiyaulhaq\/pvyos\/archive\/0.1.tar.gz',$/;"	kind:variable	line:10
 ethernet	../pvyos/interfaces.py	/^    def ethernet(self,interface,address,description,duplex='auto',speed='auto'):$/;"	kind:member	line:10
 hostname	../pvyos/system.py	/^    def hostname(self,name):$/;"	kind:member	line:21
 interface	../pvyos/interfaces.py	/^class interface(vyos):$/;"	kind:class	line:5
@@ -42,5 +42,5 @@ telnet	../pvyos/services.py	/^    def telnet(self):$/;"	kind:member	line:19
 telnet_connection	../pvyos/router.py	/^    def telnet_connection(self):$/;"	kind:member	line:11
 url	../setup.py	/^  url = 'https:\/\/github.com\/zufardhiyaulhaq\/pvyos',$/;"	kind:variable	line:9
 user	../pvyos/system.py	/^    def user(self,username,passwd,fullname="fullname"):$/;"	kind:member	line:10
-version	../setup.py	/^  version = '0.0.1',$/;"	kind:variable	line:5
+version	../setup.py	/^  version = '0.1',$/;"	kind:variable	line:5
 vyos	../pvyos/router.py	/^class vyos():$/;"	kind:class	line:4

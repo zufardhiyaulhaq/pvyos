@@ -2,7 +2,7 @@ import pexpect
 from pexpect import pxssh
 from .router import vyos
 
-class interface(vyos):
+class interfaces(vyos):
 
     def __init__(self,ipaddr,username,password):
         super().__init__(ipaddr,username,password)
@@ -24,6 +24,5 @@ class interface(vyos):
             return False
         else:
             session = self.session
-
-        session.sendline("set interfaces ethernet %s address '%s'"%(interface,address))
-        session.sendline("set interfaces ethernet %s description '%s'"%(interface,description))
+            
+        session.sendline("set interfaces loopback %s address %s"%(interface,address))
