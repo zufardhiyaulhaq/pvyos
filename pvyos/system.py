@@ -17,3 +17,14 @@ class system(vyos):
         session.sendline("set system login user %s full-name '%s'"%(username,fullname))
         session.sendline("set system login user %s authentication plaintext-password %s"%(username,passwd))
         session.sendline("set system login user %s level admin"%(username))
+    
+    def hostname(self,name):
+
+        if (self.session == None):
+            return False
+        else:
+            session = self.session
+
+        session.sendline("set system hostname %s"%(name))
+
+    
