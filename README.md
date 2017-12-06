@@ -14,6 +14,11 @@ pexpect >= 4.2.1+
 - Service (SSH,Telnet,DNS)
 - Interface (Ethernet, Loopback)
 
+# Instalation
+```
+pip3 install pvyos
+```
+
 # Example
 
 ##### Create Session
