@@ -56,10 +56,10 @@ after establish a connection, use this following command to configure static rou
 device.static("ipnetwork","netmask","nexthop","distance")
 ```
 
-##### ipnetwork format : x.x.x.x
-##### netmask format : 0-32
-##### nexthop format : x.x.x.x
-##### distance format : 1-255
+* ipnetwork format  : x.x.x.x
+* netmask format    : 0-32
+* nexthop format    : x.x.x.x
+* distance format   : 1-255
 
 ### RIP
 
