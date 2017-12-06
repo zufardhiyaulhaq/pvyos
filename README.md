@@ -50,7 +50,7 @@ device.telnet_connection()
 
 then you can configure static,rip, or ospf routing protocol.
 
-### Static
+#### Static
 after establish a connection, use this following command to configure static route.
 ```
 device.static("ipnetwork","netmask","nexthop","distance")
@@ -61,20 +61,20 @@ device.static("ipnetwork","netmask","nexthop","distance")
 * nexthop format    : x.x.x.x
 * distance format   : 1-255
 
-### RIP
+#### RIP
 after establish a connection, use this following command to configure RIP.
 ```
 device.rip("network/netmask")
 ```
 * network netmask format : x.x.x.x/y
 
-### OSPF
+#### OSPF
 
 ## Interfaces
 The first thing you need to configure interfaces is declare a variable.
 
 ```
-device = pvyos.routing("ipaddress","username","password")
+device = pvyos.interfaces("ipaddress","username","password")
 ```
 
 after that, use telnet_connection() fungtion to connect to the device with telnet protocol.
@@ -82,7 +82,7 @@ after that, use telnet_connection() fungtion to connect to the device with telne
 ```
 device.telnet_connection()
 ```
-### ethernet
+#### ethernet
 after establish a connection, use this following command to configure ethernet interfaces.
 ```
 device.ethernet("ethernet name","ipaddress","description")
@@ -91,7 +91,7 @@ device.ethernet("ethernet name","ipaddress","description")
 * ethernet name     : ethx
 * description       : string
 
-### loopback
+#### loopback
 after establish a connection, use this following command to configure loopback interfaces.
 ```
 device.loopback("loopback name","ipaddress")
