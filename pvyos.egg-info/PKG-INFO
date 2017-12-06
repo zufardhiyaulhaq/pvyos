@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pvyos
+Version: 0.1
+Summary:  Pvyos is a simple library build on pexpect to connect and configure Vyos OS.
+Home-page: https://github.com/zufardhiyaulhaq/pvyos
+Author: Zufar Dhiyaulhaq
+Author-email: zufar@ieee.org
+License: UNKNOWN
+Download-URL: https://github.com/zufardhiyaulhaq/pvyos/archive/0.1.tar.gz
+Description: UNKNOWN
+Keywords: vyos,networking,automation
+Platform: UNKNOWN

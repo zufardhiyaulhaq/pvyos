@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+pvyos/__init__.py
+pvyos/interfaces.py
+pvyos/router.py
+pvyos/routing.py
+pvyos/services.py
+pvyos/system.py
+pvyos.egg-info/PKG-INFO
+pvyos.egg-info/SOURCES.txt
+pvyos.egg-info/dependency_links.txt
+pvyos.egg-info/top_level.txt
